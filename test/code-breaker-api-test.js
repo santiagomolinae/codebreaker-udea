@@ -9,7 +9,7 @@ var expect = chai.expect;
 
 describe('GET /setsecret:number', function() {
   it('should return code 200', function(done){
-    request.get('/setsecret/1234')
+    request.get('/setsecret/123D')
       .expect(200)
       .end(function(err, res){
         if (err) return done (err)
