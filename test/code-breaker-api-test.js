@@ -9,7 +9,7 @@ var expect = chai.expect;
 
 describe('GET /setsecret:number', function() {
   it('should return code 200', function(done){
-    request.get('/setsecret/123D')
+    request.get('/setsecret/1234')
       .expect(200)
       .end(function(err, res){
         if (err) return done (err)
@@ -101,7 +101,7 @@ describe('GET /guess/:number', function(){
         should.exist(res);
         res.body.should.be.an.Object;
         should.exist(res.body.result);
-        assert.equal('XXXX', res.body.result);
+        assert.equal('XXLLX', res.body.result);
         done()
       });
   });
