@@ -101,7 +101,7 @@ describe('GET /guess/:number', function(){
         should.exist(res);
         res.body.should.be.an.Object;
         should.exist(res.body.result);
-        assert.equal('XXLLX', res.body.result);
+        assert.equal('XXXX', res.body.result);
         done()
       });
   });
